@@ -15,8 +15,9 @@ body {
   color: var(--text-color);
 }
 
-ul{
+ul {
   list-style: none;
+  margin: 0;
 }
 
 h1,
@@ -25,17 +26,17 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0;
 }
 
 .link {
   text-decoration: none;
   list-style: none;
+  color: var(--text-color);
 
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 400;
 }
 
 /* active links */
@@ -46,25 +47,23 @@ a.active {
 /* #endregion Global styles */
 
 /* #region Header */
-.header{
+.header {
   border-bottom: 1px solid #ececec;
-}
-:visited {
-  color: var(--black);
+  padding: 24px 0;
 }
 
-.padding-top-but{
+.padding-top-but {
   padding: 94px 0;
 }
 
 .container {
   width: 1200px;
-  align-items: center;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .main-nav {
-  padding: 24px 0;
   display: flex;
 }
 
@@ -78,7 +77,7 @@ a.active {
   color: var(--btn-active);
 }
 
-.logo>span {
+.logo > span {
   color: var(--black);
 }
 
@@ -92,7 +91,7 @@ a.active {
   margin-right: 40px;
 }
 
-.nav-link>.link {
+.nav-link > .link {
   display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -115,18 +114,18 @@ a.active {
   list-style: none;
 }
 
-.auth-nav-link>a {
+.auth-nav-link > a {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #757575;
   text-decoration: none;
 }
 
-.auth-nav .link+.link {
+.auth-nav .link + .link {
   margin-right: 30px;
 }
 
-.auth-nav .link+.link {
+.auth-nav .link + .link {
   padding-left: 50px;
 }
 
@@ -148,7 +147,7 @@ a.active {
   font-size: 44px;
   line-height: 1.4;
   width: 696px;
-  margin: 0 auto 1em auto;
+  margin: 0 auto 30px auto;
 }
 
 .hero-btn {
@@ -167,10 +166,12 @@ a.active {
 /* #endregion Hero*/
 
 /* #region Benefits */
+.hide-title {
+  display: none;
+}
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   list-style: none;
 }
@@ -180,7 +181,7 @@ a.active {
 }
 
 .benefit-item:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .benefit-title {
@@ -195,7 +196,7 @@ a.active {
   color: #212121;
 }
 
-/* стиль цвета для параграфов */
+/* стиль цвета для параграфов BENEFITS*/
 .benefit-descr {
   font-size: 14px;
   line-height: 1.7;
@@ -205,7 +206,7 @@ a.active {
 /* #endregion Benefits */
 
 /* #region Activity */
-.indent-bottom{
+.indent-bottom {
   padding-bottom: 94px;
 }
 
@@ -234,7 +235,7 @@ a.active {
   padding-right: 30px;
 }
 
-.activity-item > img{
+.activity-item > img {
   display: block;
 }
 /* #endregion Activity */
@@ -258,7 +259,7 @@ a.active {
   list-style: none;
 }
 
-.team-card>img {
+.team-card > img {
   width: 270px;
   display: block;
 }
@@ -337,7 +338,7 @@ a.active {
 /* #endregion Portfolio */
 
 /* #region  Works */
-.works-list {
+.work-item-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -347,8 +348,7 @@ a.active {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  /* border: 1px solid #eeeeee; */
-  border-bottom: 1px solid #eeeeee;
+  /* border-bottom: 1px solid #eeeeee; */
 }
 
 .work-link:nth-child(3n) {
@@ -359,8 +359,8 @@ a.active {
   margin-bottom: 0;
 }
 
-.works-title {
-  margin: 0 0 10px 0;
+.work-item-title {
+  margin-bottom: 4px;
 
   font-size: 18px;
   line-height: 2;
@@ -369,24 +369,26 @@ a.active {
   color: #212121;
 }
 
-.works-subtitle {
+.work-item-subtitle {
   font-size: 16px;
   line-height: 1.8;
   color: #757575;
 }
 
-.work-link>img {
-  /* width: 370px; */
+.work-link > img {
   width: 100%;
 
   display: block;
 }
 
 .work-title {
-  padding: 30px;
+  padding: 20px 24px;
   border-radius: 0 0 4px 4px;
   text-align: left;
   background-color: var(--white);
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /* #endregion */
@@ -404,7 +406,7 @@ a.active {
   color: var(--btn-active);
 }
 
-.logo-footer>span {
+.logo-footer > span {
   color: var(--white);
 }
 
@@ -415,6 +417,10 @@ a.active {
   flex-direction: column;
 }
 
+.footer-address a {
+  line-height: 1.71;
+}
+
 .footer-contact {
   color: var(--white);
   font-size: 14px;
@@ -422,7 +428,7 @@ a.active {
 }
 
 .footer-contact:hover,
-.footer-contact:focus{
+.footer-contact:focus {
   display: block;
   color: var(--btn-active);
   transition: 0.3s;
@@ -441,10 +447,6 @@ a.active {
 
 .footer-address-loc a:hover {
   color: var(--btn-active);
-}
-
-.mail {
-  margin: 9px 0 9px 0;
 }
 
 /* #endregion Footer */
