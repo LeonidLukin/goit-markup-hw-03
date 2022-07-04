@@ -11,7 +11,6 @@
 
 body {
   font-family: "Roboto", "sans-serif";
-
   color: var(--text-color);
 }
 
@@ -73,9 +72,12 @@ a.active {
 
   text-decoration: none;
   font-size: 26px;
+  font-weight: 700;
   font-family: "Raleway", sans-serif;
 
   color: var(--btn-active);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 .logo > span {
@@ -111,6 +113,7 @@ a.active {
   display: flex;
   margin: 0 0 0 auto;
   list-style: none;
+  align-items: center;
 }
 
 .auth-nav-link > a {
@@ -164,11 +167,26 @@ a.active {
   color: var(--white);
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: pointer;
+}
+
 /* #endregion Hero*/
 
 /* #region Benefits */
 .hide-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-list {
@@ -258,7 +276,9 @@ a.active {
 }
 
 .team-card {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
   list-style: none;
 }
 
@@ -351,7 +371,6 @@ a.active {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  /* border-bottom: 1px solid #eeeeee; */
 }
 
 .work-link:nth-child(3n) {
@@ -407,7 +426,11 @@ a.active {
 .logo-footer {
   text-decoration: none;
   font-size: 26px;
+  font-weight: 700;
+
   letter-spacing: 0.03em;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
 
   color: var(--btn-active);
 }
