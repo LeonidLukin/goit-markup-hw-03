@@ -37,6 +37,7 @@ p {
 
   font-size: 14px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 /* active links */
@@ -149,13 +150,15 @@ a.active {
 }
 
 .hero-btn {
-  padding: 0.6em 2em;
+  padding: 10px 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   border-radius: 4px;
   border: none;
   font-family: inherit;
+
+  letter-spacing: 0.06em;
 
   background-color: var(--btn-active);
   color: var(--white);
@@ -189,6 +192,7 @@ a.active {
   line-height: 1.2;
   font-weight: 700;
 
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #212121;
@@ -197,8 +201,9 @@ a.active {
 /* стиль цвета для параграфов BENEFITS*/
 .benefit-descr {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   color: #757575;
+  letter-spacing: 0.03em;
 }
 
 /* #endregion Benefits */
@@ -213,7 +218,7 @@ a.active {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
-
+  letter-spacing: 0.03em;
   color: var(--black);
 }
 
@@ -277,6 +282,7 @@ a.active {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 
   color: #212121;
 }
@@ -285,6 +291,7 @@ a.active {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 /* #endregion Team */
@@ -295,7 +302,11 @@ a.active {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   border-radius: 4px;
+  border: none;
+  padding: 6px 20px;
+  background-color: var(--btn-bg-color);
 }
 
 .filter-btn:hover,
@@ -320,12 +331,6 @@ a.active {
 
 .filter-link:not(last-child) {
   margin-right: 8px;
-}
-
-.filter-btn {
-  padding: 6px 20px;
-  border: none;
-  background-color: var(--btn-bg-color);
 }
 
 .filter-btn:hover,
@@ -365,12 +370,14 @@ a.active {
   font-weight: 700;
 
   color: #212121;
+  letter-spacing: 0.06em;
 }
 
 .work-item-subtitle {
   font-size: 16px;
   line-height: 1.8;
   color: #757575;
+  letter-spacing: 0.03em;
 }
 
 .work-link > img {
@@ -400,6 +407,7 @@ a.active {
 .logo-footer {
   text-decoration: none;
   font-size: 26px;
+  letter-spacing: 0.03em;
 
   color: var(--btn-active);
 }
@@ -417,6 +425,7 @@ a.active {
 
 .footer-address a {
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-contact {
