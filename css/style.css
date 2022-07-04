@@ -63,6 +63,7 @@ a.active {
 }
 
 .main-nav {
+  align-items: center;
   display: flex;
 }
 
@@ -453,6 +454,10 @@ a.active {
   color: var(--white);
   font-size: 14px;
   font-style: normal;
+}
+
+.footer-contact:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contact:hover,
