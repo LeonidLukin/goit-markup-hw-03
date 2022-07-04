@@ -101,9 +101,7 @@ a.active {
 .link a:hover,
 .link a:focus {
   cursor: pointer;
-
   color: var(--btn-active);
-
   transition: 0.3s;
 }
 
